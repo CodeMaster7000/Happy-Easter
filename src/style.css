@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Ribeye);
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #e0f6e5;
+}
+h1 {
+ font-family: "Ribeye";
+ -webkit-text-stroke: 0.1px #ff83c3;
+ background-color: #ffe552;
+opacity: 0.8;
+background-image:  linear-gradient(135deg, #ff83c3 25%, transparent 25%), linear-gradient(225deg, #ff83c3 25%, transparent 25%), linear-gradient(45deg, #ff83c3 25%, transparent 25%), linear-gradient(315deg, #ff83c3 25%, #ffe552 25%);
+background-position:  4px 0, 4px 0, 0 0, 0 0;
+background-size: 8px 8px;
+background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.eggs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  left: 20%;
+}
+.eye1,
+.eye2,
+.nose {
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+}
+.eye1 {
+  top: 50px;
+  left: 30px;
+}
+.eye2 {
+  left: 70px;
+}
+.nose {
+  left: 65px;
+  top: 67px;
+  border-radius: 50% 50% 50% 50% / 24% 25% 75% 76%;
+  width: 12px;
+  background-color: #ff0054;
+}
+p {
+  position: relative;
+  left: 17px;
+  top: 40px;
+  font-family: "Indie Flower";
+}
+span {
+    display:inline-block;
+    transform:scale(4,1);
+}
+.ear1,
+.ear2 {
+  height: 100px;
+  width: 40px;
+  border-radius: 50%;
+  background:radial-gradient(ellipse farthest-side at 50% 50%, #fae1dd 45%, white 47%);
+  position: relative;
+  z-index: -1;
+}
+.ear1 {
+  bottom: 140px;
+  left: 1px;
+  transform: rotate(-10deg);
+  animation: move1 1s infinite alternate;
+}
+.ear2 {
+  left: 100px;
+  top: 15px;
+  transform: rotate(30deg);
+  animation: move2 1s infinite alternate;
+}
+.body {
+  height: 200px;
+  width: 150px;
+  background-color: white;
+  border-radius: 30%;
+  z-index: -1;
+  position: relative;
+  bottom: 70px;
+}
+.egg1,
+.egg2{
+  width: 150px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+}
+.egg1 {
+background-color: #fee440;
+background-image:  linear-gradient(135deg, #00bbf9 25%, transparent 25%), linear-gradient(225deg, #00bbf9 25%, transparent 25%), linear-gradient(45deg, #00bbf9 25%, transparent 25%), linear-gradient(315deg, #00bbf9 25%, #fee440 25%);
+background-position:  31px 0, 31px 0, 0 0, 0 0;
+background-size: 62px 62px;
+background-repeat: repeat;
+  transform: rotate(-10deg);
+  left: 10px;
+}
+.egg2 {
+background-color: #9b5de5;
+background-image: radial-gradient(#f15bb5 10px, #9b5de5 2px);
+background-size: 40px 40px;
+transform: rotate(20deg);
+ right: 10px;
+}
+@keyframes move1 {
+  from {left: 15px;}
+  to {right: 30px;}
+}
+@keyframes move2 {
+  from {left: 70px; top: 15px;}
+  to {right: 80px;}
+}
